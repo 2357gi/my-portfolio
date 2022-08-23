@@ -177,7 +177,7 @@ const iconImageStyle = css({
   objectFit: 'cover',
   position: 'fixed',
   bottom: 0,
-  left: '64rem',
+  left: '44rem',
   opacity: '1',
   transition: '0.3s',
 })
