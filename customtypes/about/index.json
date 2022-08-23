@@ -1,0 +1,68 @@
+{
+  "id": "about",
+  "label": "About",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "about": {
+        "type": "Text",
+        "config": {
+          "label": "about",
+          "placeholder": ""
+        }
+      },
+      "experience": {
+        "type": "Group",
+        "config": {
+          "label": "経歴",
+          "fields": {
+            "season": {
+              "type": "Text",
+              "config": {
+                "label": "season",
+                "placeholder": ""
+              }
+            },
+            "content": {
+              "type": "Text",
+              "config": {
+                "label": "content",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "skills": {
+        "type": "Group",
+        "config": {
+          "label": "Skills",
+          "fields": {
+            "category": {
+              "type": "Text",
+              "config": {
+                "label": "カテゴリー",
+                "placeholder": ""
+              }
+            },
+            "skill": {
+              "type": "Text",
+              "config": {
+                "label": "スキル",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+html {
+  color: #181617;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 5px #00000030 inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #676767;
+  border-radius: 5px;
+}

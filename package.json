@@ -1,0 +1,52 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "author": "unotovive",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "stylelint": "stylelint --ignore-path .gitignore './src/**/*.{css,scss,ts,tsx}'",
+    "fix": "yarn lint --fix && yarn stylelint --fix && yarn format",
+    "typecheck": "tsc",
+    "lint": "next lint",
+    "prettier": "prettier --config .prettierrc.json --ignore-path .gitignore './**/*.{ts,tsx,json,md}'",
+    "format": "yarn prettier --write",
+    "prepare": "husky install",
+    "slicemachine": "start-slicemachine"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@prismicio/client": "^6.6.4",
+    "@prismicio/helpers": "^2.3.3",
+    "@prismicio/react": "^2.4.4",
+    "@prismicio/slice-simulator-react": "^0.2.2",
+    "next": "12.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-konami-hook": "^1.0.1",
+    "ress": "^5.0.2"
+  },
+  "devDependencies": {
+    "@stylelint/postcss-css-in-js": "^0.38.0",
+    "@types/node": "18.7.1",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-next": "^12.2.4",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.0",
+    "postcss-syntax": "^0.36.2",
+    "prettier": "^2.7.1",
+    "slice-machine-ui": "^0.4.2",
+    "stylelint": "^14.9.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "typescript": "4.7.4"
+  }
+}
