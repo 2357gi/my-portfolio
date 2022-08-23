@@ -7,6 +7,7 @@ const Contact = () => {
       <div css={ContentStyle}>
         <p css={ContentTitle}>Twitter</p>
         <a
+          css={ContentLink}
           href="https://twitter.com/2357gi"
           target="_blank"
           rel="noopener noreferrer"
@@ -17,6 +18,7 @@ const Contact = () => {
       <div css={ContentStyle}>
         <p css={ContentTitle}>Facebook</p>
         <a
+          css={ContentLink}
           href="https://facebook.com/2357gi"
           target="_blank"
           rel="noopener noreferrer"
@@ -26,7 +28,12 @@ const Contact = () => {
       </div>
       <div css={ContentStyle}>
         <p css={ContentTitle}>Email</p>
-        <a href="mailto:2357.gi@gmail.com">2357.gi@gmail.com</a>
+        <a 
+          css={ContentLink}
+          href="mailto:2357.gi@gmail.com"
+        >
+          2357.gi@gmail.com
+        </a>
       </div>
       <p>お仕事のご依頼、ご検討、その他何でも気軽にお問い合わせください。</p>
     </div>
@@ -54,6 +61,13 @@ const ContentTitle = css({
   fontWeight: 700,
   fontSize: '2rem',
   color: colors.black,
+})
+
+const ContentLink = css({
+  fontFamily: 'roboto, sans-serif',
+  fontWeight: 700,
+  fontSize: '1.6rem',
+  color: '#93cddb',
 })
 
 export default Contact
