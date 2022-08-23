@@ -123,7 +123,7 @@ export const Layout = ({ children }: LayoutProps) => {
               css={[
                 iconImageStyle,
                 router.pathname === '/' || router.pathname === '/welcome'
-                  ? css({ display: 'none' })
+                  ? css({ opacity: '0', bottom: '-40rem' })
                   : css({}),
               ]}
               src="/icon.png"
@@ -178,7 +178,8 @@ const iconImageStyle = css({
   position: 'fixed',
   bottom: 0,
   left: '64rem',
-  filter: 'brig',
+  opacity: '1',
+  transition: '0.3s',
 })
 const backGroundBaseStyle = css({
   background: colors.bg,
