@@ -117,7 +117,20 @@ export const Layout = ({ children }: LayoutProps) => {
           </nav>
         </header>
         <div css={pageContentStyle}>
-          <h1 css={pageTitleStyle}>{pageTitle}</h1>
+          <h1 css={pageTitleStyle}>
+            {pageTitle}
+            <img
+              css={[
+                iconImageStyle,
+                router.pathname === '/' || router.pathname === '/welcome'
+                  ? css({ display: 'none' })
+                  : css({}),
+              ]}
+              src="/icon.png"
+              alt="me"
+            />
+          </h1>
+
           <div css={pageChildrenStyle}>{children}</div>
         </div>
         <div css={backGroundStyle}>
@@ -159,7 +172,14 @@ export const Layout = ({ children }: LayoutProps) => {
     </div>
   )
 }
-
+const iconImageStyle = css({
+  width: '18rem',
+  objectFit: 'cover',
+  position: 'fixed',
+  bottom: 0,
+  left: '64rem',
+  filter: 'brig',
+})
 const backGroundBaseStyle = css({
   background: colors.bg,
   width: '100%',
